@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Homepage.css"> <!-- Add a separate styles.css file for styling -->
+    <title>Task Management Dashboard</title>
+</head>
+<body>
+    <div id="dashboard">
+        <h1>Welcome to the Task Management Dashboard</h1>
+        
+        <div class="form-container">
+            <h2>Add a New Task</h2>
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="taskTitle">Title:</label>
+                    <input type="text" id="taskTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="taskDescription">Description:</label>
+                    <textarea id="taskDescription"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="dueDate">Due Date:</label>
+                    <input type="date" id="dueDate" required>
+                </div>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+        <button id="logoutButton">Logout</button>
+        <a href="./SecondPage.html" ><button id="SecondpgeButton">Cards</button></a>
+    </div>
+    <script src="./Homepage.js"></script>
+</body>
+</html>
